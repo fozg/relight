@@ -1,13 +1,14 @@
 {
-  "name": "relight",
-  "version": "1.0.0",
+  "name": "relightstate",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "author": "@fozg",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/react": "^17.0.9",
@@ -17,7 +18,9 @@
     "typescript": "^4.3.2"
   },
   "dependencies": {
-    "react": "^17.0.2",
     "shallowequal": "^1.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
   }
 }

@@ -15,7 +15,7 @@ type Dispatch<T> = (
     state?: T | ((newstate: T) => void)
 ) => Promise<void> | void;
 
-class ReactLightState<T, A = {}> {
+class ReLightState<T, A = {}> {
     private initState: T;
     private actionsCreator?: A;
     private options: IOptions;
@@ -205,4 +205,4 @@ class ReactLightState<T, A = {}> {
     }
 }
 
-export default ReactLightState;
+export default ReLightState;
